@@ -551,8 +551,7 @@ int main (int argc, char **argv, char **envp)
               if (WIFEXITED (status) != 0)
                 {
                   if (WEXITSTATUS (status) != 0)
-                    printstats ("Command exited with non-zero status (%d)\n",
-                                WEXITSTATUS (status));
+                    printstats ("NZEC(%d)\n", WEXITSTATUS (status));
                   else
                     printstats ("OK\n");
                 }
