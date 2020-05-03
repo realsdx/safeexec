@@ -543,9 +543,9 @@ int main (int argc, char **argv, char **envp)
           ttarget = time (NULL);
 
           if (mark == MLE)
-            printstats ("Memory Limit Exceeded\n");
+            printstats ("MLE\n");
           else if (mark == RTLE)
-            printstats ("Time Limit Exceeded\n");
+            printstats ("RTLE\n");
           else
             {
               if (WIFEXITED (status) != 0)
@@ -587,21 +587,21 @@ int main (int argc, char **argv, char **envp)
                        * So here is small adjustment for presentation.           */
                       usage.ru_utime.tv_sec = profile.cpu;
                       usage.ru_utime.tv_usec = 0;
-                      printstats ("Time Limit Exceeded\n");
+                      printstats ("TLE\n");
                     }
                   else if (mark == OLE)
-                    printstats ("Output Limit Exceeded\n");
+                    printstats ("OLE\n");
                   else if (mark == RTLE)
-                    printstats ("Time Limit Exceeded\n");
+                    printstats ("RTLE\n");
                   else if (mark == RF)
                     printstats ("Invalid Function\n");
                   else if (mark == IE)
                     printstats ("Internal Error\n");
                 }
             }
-          printstats ("elapsed time: %d seconds\n", ttarget - tsource);
-          printstats ("memory usage: %d kbytes\n", mem);
-          printstats ("cpu usage: %0.3f seconds\n",
+          printstats ("ELAPSED_TIME: %d s\n", ttarget - tsource);
+          printstats ("MEMORY_USED: %d kB\n", mem);
+          printstats ("CPU_TIME: %0.3f s\n",
                       (float) miliseconds (&usage.ru_utime) / 1000.0);
         }
     }
