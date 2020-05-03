@@ -143,47 +143,9 @@ Total Test time (real) =   9.48 sec
 
 ## Todo
 
-* Use getrusage for getting memory usage(becase this is same on both bsd and linux)
 * Fix file read/write permissions on linux when file owner is test runner and group permission is on:
   - can read chmod 0640 file, but can't read 0620 file.
   - can write chmod 0620 file, but can't write 0644 file.
 * Use [Getopt](http://www.gnu.org/software/libc/manual/html_node/Getopt.html) similar argument parsing library.
 
-## Changelog
-
-* FreeBSD support
-
-### May 17, 2015.
-
-* Fix linux specifics
-
-### Sep 23, 2014.
-
-* chmod/chown task for cmake
-* Add more test
-
-### Sep 8, 2014.
-
-* Introduce cmake
-* Terminate only process under controll. kill(pid,..) instead of kill(-1,...)
-
-### Apr 5-6, 2013
-
-* Apparmor profile for linux file read/write permission workaround.
-* setgit to protect files with group permission
-* Redirect stderr of user program
-
-### Dec 10, 2012.
-
-* Add address space limit
-* Error handling for permission setter
-
-### Dec 8, 2012.
-
-* FreeBSD support using `kvm.h`
-* Add some error handling
-
-### Feb 16, 2009.
-
-* Copied from mooshak's SafeExec.
-* Add chroot feature
+_Initially Cloned from https://github.com/ochko/safeexec.git_
