@@ -18,26 +18,26 @@ Resource usage is in 4 line plain text.
 
 For memory limit:
 ```
-Memory Limit Exceeded
-elapsed time: 0 seconds
-memory usage: 32884 kbytes
-cpu usage: 0.416 seconds
+RTLE
+ELAPSED_TIME: 3 s
+MEMORY_USED: 40470 kB
+CPU_TIME: 0.002 s
 ```
 
 For time limit:
 ```
-Time Limit Exceeded
-elapsed time: 2 seconds
-memory usage: 1424 kbytes
-cpu usage: 1.000 seconds
+RTLE
+ELAPSED_TIME: 3 s
+MEMORY_USED: 2070 kB
+CPU_TIME: 1.002 s
 ```
 
 File write attempt:
 ```
 Command exited with non-zero status (1)
-elapsed time: 0 seconds
-memory usage: 64 kbytes
-cpu usage: 0.000 seconds
+ELAPSED_TIME: 2 s
+MEMORY_USED: 7342 kB
+CPU_TIME: 1.052 s
 ```
 
 ## Usage notes
