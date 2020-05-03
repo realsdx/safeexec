@@ -18,7 +18,7 @@ Resource usage is in 4 line plain text.
 
 For memory limit:
 ```
-RTLE
+MLE
 ELAPSED_TIME: 3 s
 MEMORY_USED: 40470 kB
 CPU_TIME: 0.002 s
@@ -26,7 +26,7 @@ CPU_TIME: 0.002 s
 
 For time limit:
 ```
-RTLE
+TLE
 ELAPSED_TIME: 3 s
 MEMORY_USED: 2070 kB
 CPU_TIME: 1.002 s
